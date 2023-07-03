@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  background-image: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor{
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  height: 100%;
+}
+
+.text-shadow-white{
+  text-shadow: 1px 1px 3px white;
+}
+
+.text-shadow-black{
+  text-shadow: 1px 1px 3px black;
+}
+
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}

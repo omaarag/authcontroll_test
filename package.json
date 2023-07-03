@@ -1,0 +1,30 @@
+{
+  "name": "usersauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "omaaraguirre@hotmail.com",
+  "license": "ISC",
+  "workspaces": [
+    "app",
+    "api"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev -workspace app",
+    "dev:api": "npm run dev -workspace api",
+    "build": "npm run build -workspace app && npm run build -workspace api",
+    "build:app": "npm run build -workspace app",
+    "build:api": "npm run build -workspace api",
+    "start": "npm run start -workspace api",
+    "test:api": "npm run test -workspace api",
+    "test:app": "npm run test -workspace app"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0"
+  }
+}
